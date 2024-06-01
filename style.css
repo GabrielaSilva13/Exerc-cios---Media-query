@@ -1,0 +1,236 @@
+/* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #402516; }
+.Moda-2-hex { color: #403531; }
+.Moda-3-hex { color: #8C7972; }
+.Moda-4-hex { color: #8C4D3F; }
+.Moda-5-hex { color: #D96A6A; }
+
+ /* 1. Crie uma media query para telas inferiores a 768 pixels; nós a utilizaremos como layout mobile.
+2. Realize as seguintes mudanças para o layout mobile:
+- Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.
+- Remova a borda lateral ao lado da div
+- Mude a orientação do Flexbox presente no elemento para vertical, e organize os elementos de forma empilhada
+- Remova a altura fixa presente no cabeçalho da página
+- Remova também o espaçamento inicial dado a cada um dos parágrafos  */
+
+
+
+
+@media screen  and (max-width: 768px){ 
+    .desing-selection {
+        position: static;
+        width: 100%;
+    }
+}
+
+.explanation{
+    border-right: none;
+    width: 100%;
+}
+
+#zen-intro {
+    flex-direction: column;
+}
+
+p{
+    text-indent:  0;
+}
+
+/* Vamos Deixar nossa página mais adequada a mídia de impressão também!
+1. Crie uma media query para meios impressos, mas sem qualquer tipo de restrição relacionada a tela
+2. Adicione as seguintes modificações a essa media query: 
+- Altere o estilo da fonte para uma serifada, como times .
+- Inverta as cores do banner para que o fundo fique claro (assim como o restante da página) */ */
+
+@media screen {
+    
+} print {
+    html{
+        font-family: 'times new romam','times',serif;
+    }
+
+    #zen-intro header{
+        background-color: rgb(239, 238, 237);
+        color:#402516 ;
+    }
+
+    .desing-selection {
+        position: static;
+        width: 100%;
+    }
+
+.explanation{
+    border-right: none;
+    width: 100%;
+}
+}
+
+
+
+
+
+
+a {
+    color: #8C4D3F;
+}
+
+a:hover {
+color:  #3f181066;
+}
+
+.main p:first-of-type:first-letter {
+font-size: 3em; 
+font-family: 'times new roman', times, serif;  
+float: left;
+}
+
+.desing-selection li {
+    border-top: #403531 solid 1px;
+    padding-top: 5px;
+
+}
+
+.desing-selection li:last-of-type{
+    border-bottom: #403531 solid 1px;
+    padding-bottom: 5px
+}
+
+
+
+
+.supporting footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.benefits {
+    display: flex;
+    border-top:#402516 solid 1px;
+    border-bottom: #402516 solid 1px;
+}
+
+.benefits p {
+    flex-basis: 30  px;
+}
+
+.benefits h3 {
+    order: 10;
+    align-self:  center;
+    flex-basis: 70%;
+    }
+
+
+.participation {
+    flex-basis: 50%;
+    flex-wrap:wrap ;
+    border-top: #402516;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .participation h3, .participation p {
+        flex-basis: 50%;
+       }
+
+       .participation h3 {
+        align-self: center;
+       }
+
+.paga-wrapper{
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    border-right: #8C7972 solid 1px;
+    padding-right:  2%;
+}
+
+#design-selection {
+    position: absolute;
+    top: 540px ;
+    left: 62%;
+    width: 34%;
+    padding-right: 0 2%;
+}
+
+.main footer{
+    margin: 4%;
+    }
+
+    .main footer a{
+      border: #8C4D3F ; 
+      padding: 0.5em;  
+    }
+
+aside ul{
+    list-style-type: none;
+}
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+
+.paga-wrapper{
+    width: 80%;
+    max-width: 1280px;
+    margin:auto;
+    }
+    
+    #zen-intro{
+        height: 550px;
+    }
+
+    #desing-Archives{
+        display: none;
+    }
+
+    #zen-intro header{
+        background-color:  #402516 ;
+        color: #D96A6A  ;
+    }
+
+
+    #zen-intro header h1, #zen-intro header h2{
+        display: inline-block;
+    }
+
+    #zen-intro header h1{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+
+html{
+    background-color: #8C7972;
+    color: #402516;
+
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-indent: 1em;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+h1{font-size: 1.8rem;}
+h2{font-size: 1.4rem;}
+h3{font-size: 1.8rem;}
+
+.summary{
+    text-align: right;
+}
+
+.main p{
+line-height: 1.5;
+}
+
+abbr{font-variant: small-caps;}
